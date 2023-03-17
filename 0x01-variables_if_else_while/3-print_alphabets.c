@@ -19,7 +19,7 @@ while (low <= 'z')
 putchar(low);
 low++;
 }
-while (b <= 'Z')
+while (app <= 'Z')
 {
 putchar(app);
 app++;
