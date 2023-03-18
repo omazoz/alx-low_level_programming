@@ -1,25 +1,25 @@
 #include <stdio.h>
 
 /**
- * main - Prints cmbnumb  between 012 to 789.
+ * main - Prints numbers between 012 to 789.
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int a, b, l;
+	int n, m, l;
 
-	for (a = 48; a < 58; a++)
+	for (n = 48; n < 58; n++)
 	{
-		for (b = 49; b < 58; b++)
+		for (m = 49; m < 58; m++)
 		{
-			for (c = 50; l < 58; c++)
+			for (l = 50; l < 58; l++)
 			{
-				if (c > b && b > a)
+				if (l > m && m > n)
 				{
-					putchar(a);
-					putchar(b);
-					putchar(c);
-					if (a != 55 || b  != 56)
+					putchar(n);
+					putchar(m);
+					putchar(l);
+					if (n != 55 || m != 56)
 					{
 						putchar(',');
 						putchar(' ');
