@@ -1,16 +1,15 @@
 #include "main.h"
-/**
- * main - Entry point
- * lets print alphabets  by _putchar
- * return nothing
- */
 
+/**
+ * print_alphabet - alphabet function
+ *
+ **/
 void print_alphabet(void)
 {
 int i = 0;
-char str[27] = "abcdefghijklmnopqrstuvwxyz";
+char str[26] = "abcdefghijklmnopqrstuvwxyz";
 
-while (i < 27)
+while (i < 26)
 _putchar(str[i++]);
 _putchar('\n');
 }
