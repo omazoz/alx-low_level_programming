@@ -12,6 +12,5 @@ char str[8] = "_putchar";
 
 while (i < 10)
 _putchar(str[i++]);
-_putchar('\n');
 return (0);
 }
