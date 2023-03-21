@@ -11,6 +11,6 @@ int i = 0;
 char str[9] = "_putchar\n";
 
 while (i < 10)
-_putchar(str[i]);
+_putchar(str[i++]);
 return (0);
 }
