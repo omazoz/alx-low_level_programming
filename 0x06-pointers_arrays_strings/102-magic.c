@@ -1,10 +1,16 @@
 #include <stdio.h>
 
+/**
+ * main - function that es an unknown memory location using pointer
+ *then prints the value of a specific array element
+ *Return: 0-sucess non 0 ERROR
+ */
 int main(void)
 {
 int n;
 int a[5];
 int *p;
+
 
 a[2] = 1024;
 p = &n;
