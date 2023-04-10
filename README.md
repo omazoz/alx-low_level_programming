@@ -10,6 +10,8 @@ This repository contains programs written for the low-level programming and algo
 * [0x05. C - Pointers, arrays and strings](./0x05-pointers_arrays_strings)
 * [0x06. C - More pointers, arrays and strings](./0x06-pointers_arrays_strings)
 * [0x07. C - Even more pointers, arrays and strings](./0x07-pointers_arrays_strings)
+* [0x09. C - Static libraries](./0x09-static_libraries)
+* [0x0A. C - argc, argv](./0x0A-argc_argv)
 
 
 
