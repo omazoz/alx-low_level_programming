@@ -36,7 +36,7 @@ This repository contains programs written for the low-level programming and algo
 
 
 
-## ABOUT this repo :pray:
+## ABOUT this Repositorie :pray:
 
 All work contained in this project was completed as part of the curriculum for ALX Africa SE. For more information, visit [this link](https://www.alxafrica.com//).
 
