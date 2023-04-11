@@ -47,3 +47,6 @@ All work contained in this project was completed as part of the curriculum for A
        alt="ALX Africa Logo"
   >
 </p>
+
+ NOTE : 
+ I'm sorry aboout the BETTY STYLE i'll try to fix it soon 
