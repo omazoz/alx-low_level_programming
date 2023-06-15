@@ -1,65 +1,50 @@
 #include "lists.h"
-#include <stdlib.h>
 
 /**
- * delete_dnodeint_at_index - delete node at give index
- * @head:list
- * @index:given index
- * Return: -1 or 0
+ * delete_dnodeint_at_index - function that deletes the node at index of a,
+ * linked list.
+ * @head: pointer to pointer to the h of linked list.
+ * @index: index of the node that should be deleted. Index starts at 0.
+ *
+ * Return: if it succeeded, -1 if it failed
  */
+
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
-	dlistint_t *start;
-	unsigned int index ;
-	unsigned int len;
-	len = len_node(&head);
+	dlistint_t *h1;
+	dlistint_t *h2;
+	unsigned int i;
 
-	start = *head;
-	if (*head == NULL)
-		return (-1);
-	if (index == 0)
-	{
-		start = start->next;
-		free(*head);
-		*head = start;
-		if (start != NULL)
-			start->prev = NULL;
-		return (1);
-	}
-	for (index = 0; index <= index - 1; index++)
-	{
-		start = start->next;
-		if (!start)
-			return (-1);
-	}
-	if (len - 1 == index)
-	{
-		start->prev->next = NULL;
-		free(start);
-		return (1);
-	}
-	start->prev->next = start->next;
-	start->next->prev = start->prev;
-	free(start);
-	return (1);
-}
+	h1 = *head;
 
-/**
- * len_node - list len
- *
- * @node:list
- * Return:unsigned int
- */
-unsigned int len_node(dlistint_t **node)
-{
-	unsigned int len = 0;
-	dlistint_t *start;
+	if (h1 != NULL)
+		while (h1->prev != NULL)
+			h1 = h1->prev;
+	i = 0;
 
-	start = *node;
-	while (start != NULL)
+	while (h1 != NULL)
 	{
-		len += 1;
-		start = start->next;
+		if (i == index)
+		{
+			if (i == 0)
+			{
+				*head = h1->next;
+				if (*head != NULL)
+					(*head)->prev = NULL;
+			}
+			else
+			{
+				h2->next = h1->next;
+
+				if (h1->next != NULL)
+					h1->next->prev = h2;
+			}
+			free(h1);
+			return (1);
+		}
+		h2 = h1;
+		h1 = h1->next;
+		i++;
 	}
-	return (len);
+	return (-1);
 }
