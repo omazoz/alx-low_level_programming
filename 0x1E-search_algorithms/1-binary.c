@@ -31,22 +31,22 @@ void print_arr(int *array, size_t left, size_t right)
 */
 int binary_search(int *array, size_t size, int value)
 {
-	size_t mid, right, left;
+	size_t mid, right_, left_;
 
 	if (!size || !array)
 		return (-1);
-	left = 0;
-	right = size - 1;
-	while (left <= right)
+	left_ = 0;
+	right_ = size - 1;
+	while (left_ <= right_)
 	{
-		mid = (left + right) / 2;
-		print_arr(array, left, right);
+		mid = (left_ + right_) / 2;
+		print_arr(array, left_, right_);
 		if (array[mid] == value)
 			return (mid);
 		else if (array[mid] > value)
-			right = mid - 1;
+			right_ = mid - 1;
 		else
-			left = mid + 1;
+			left_ = mid + 1;
 	}
 	return (-1);
 }
